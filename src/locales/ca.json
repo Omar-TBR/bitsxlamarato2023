@@ -1,0 +1,29 @@
+{
+    "home": {
+      "slogan": "Codificant la sexualitat del futur",
+      "sloganSubtitle": "El vostre espai d'educació sexual",
+      "buttons": {
+        "connect": {
+            "title": "Connectat",
+            "subtitle": "Comparteix, pregunta i debat de manera anònima en el fòrum públic. Uneix-te a una comunitat de suport per a tractar temes d'educació sexual sense ser jutjat. La teva veu compta aquí."
+        },
+        "learn": {
+            "title": "Aprèn",
+            "subtitle": "Explora els aspectes essencials de la salut sexual. Des de l'anatomia fins a les pràctiques segures, passant per una secció de preguntes freqüents."
+        },
+        "track": {
+            "title": "Decideix",
+            "subtitle": "Introdueix les teves dades per a un seguiment personalitzat. Controla els cicles menstruals, l'anticoncepció i molt més. Rep recomanacions per a gestionar de manera proactiva la teva salut sexual."
+        }
+      }
+    },
+    "track": {
+
+    },
+    "connect": {
+
+    },
+    "settings": {
+    }
+  }
+  

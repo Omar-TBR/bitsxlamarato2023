@@ -1,0 +1,33 @@
+{
+    "home": {
+      "slogan": "Coding the sexuality of the future",
+      "sloganSubtitle": "Your sexual education space",
+      "buttons": {
+        "connect": {
+            "title": "Connect",
+            "subtitle": "Anonymously share, ask, and discuss in the public forum. Join a supportive community to navigate sexual education topics without judgment. Your voice matters here."
+        },
+        "learn": {
+            "title": "Learn",
+            "subtitle": "Explore the essentials of sexual health . From anatomy to safe practices and a FAQ section, empower yourself with knowledge for informed decision-making."
+        },
+        "track": {
+            "title": "Decide",
+            "subtitle": "Input your data for a personalized tracking. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health."
+        }
+      }
+    },
+    "track": {
+
+    },
+    "connect": {
+
+    },
+    "settings": {
+    },
+    "footer":{
+        "createdBy": "Created by",
+        "resources": "Other resources"
+    }
+  }
+  

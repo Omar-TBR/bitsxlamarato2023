@@ -1,0 +1,32 @@
+{
+    "home": {
+      "slogan": "Codificando la sexualidad del futuro",
+      "sloganSubtitle": "Tu espacio de educación sexual",
+      "buttons": {
+        "connect": {
+            "title": "Conecta",
+            "subtitle": "Comparte, pregunta y debate de forma anónima en el foro público. Únete a una comunidad de apoyo para tratar temas de educación sexual sin ser juzgado. Tu voz cuenta aquí."
+        },
+        "learn": {
+            "title": "Aprende",
+            "subtitle": "Explora los aspectos esenciales de la salud sexual. Desde la anatomía hasta las prácticas seguras, pasando por una sección de preguntas frecuentes."
+        },
+        "track": {
+            "title": "Decide",
+            "subtitle": "Introduce tus datos para un seguimiento personalizado. Controla los ciclos menstruales, la anticoncepción y mucho más. Recibe recomendaciones para gestionar de forma proactiva tu salud sexual."
+        }
+      }
+    },
+    "track": {
+
+    },
+    "connect": {
+
+    },
+    "settings": {
+    },
+    "footer":{
+        "createdBy": "Creado por"
+    }
+  }
+  

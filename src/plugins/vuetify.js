@@ -18,6 +18,7 @@ const theme = {
     darkSecondary: '#ff4d67',
     accent: '#FFD700',
     background: '#FFE4C4',
+    clear: '#E8E8ED',
   }
 
 export default new Vuetify({

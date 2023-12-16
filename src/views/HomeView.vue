@@ -1,19 +1,19 @@
 <template>
-  <v-container>
+  <v-container class="mb-15">
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('@/assets/logo.svg')"
           class="my-8 fullLogo"
           contain
           height="300"
           :style="{ opacity: logoOpacity, transform: `scale(${logoScale})` }"
         />
         <h1 class="display-2 font-weight-bold mb-10">
-          Codificant la sexualitat del futur
+          {{ $t("home.slogan") }}
         </h1>
         <v-row class="my-10">
-          <v-col v-for="button in buttons" :key="button.title" cols="4">
+          <v-col v-for="button in buttons" :key="button.title" cols="4" @click="navigateTo(button.title)">
             <div class="circle-container hover-zoom">
               <v-img
                 :src="button.background"
@@ -26,10 +26,10 @@
                 <v-row fill-height justify="center" align="center" fluid>
                   <v-col cols="12" class="text-right title">
                     <h2 class="mb-10">
-                      {{ button.title }}
+                      {{ $t("home.buttons." + button.title + ".title") }}
                     </h2>
-                    <h5 class="subtitle">
-                      {{ button.text }}
+                    <h5 class="subtitle font-weight-regular">
+                      {{ $t("home.buttons." + button.title + ".subtitle") }}
                     </h5>
                   </v-col>
                 </v-row>
@@ -37,150 +37,90 @@
             </div>
           </v-col>
         </v-row>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit orci quisque,
-          dignissim a eget ad quam porta sagittis parturient sem, luctus felis
-          consequat habitant eu urna egestas sed. Justo egestas faucibus netus
-          taciti ac augue aenean curae, dis bibendum donec duis rhoncus diam
-          non, nullam dictumst scelerisque mi tortor libero class. Mi pulvinar
-          rutrum primis mattis pharetra porttitor parturient blandit aliquam,
-          eleifend leo iaculis cursus cubilia litora risus diam quam, augue
-          senectus feugiat sollicitudin suscipit commodo eget praesent. Odio
-          tincidunt in facilisi pretium vulputate integer nec ligula eget,
-          inceptos placerat nullam lobortis semper scelerisque augue aliquam,
-          feugiat per porttitor pharetra ridiculus laoreet cubilia tempor. Magna
-          habitant aliquam orci velit commodo nostra at penatibus taciti,
-          suscipit volutpat pulvinar sem dignissim vivamus sed varius bibendum
-          pharetra, senectus himenaeos cursus per pretium lectus mollis
-          pellentesque. Pretium penatibus massa at pulvinar eros ligula congue
-          nisl blandit cubilia, ac maecenas morbi enim iaculis et parturient
-          torquent nam, pharetra arcu dictumst etiam elementum nullam orci
-          integer molestie. Metus imperdiet posuere torquent rhoncus nostra eros
-          etiam accumsan vivamus cursus, consequat risus scelerisque quis at
-          nascetur tortor eu elementum magnis auctor, duis in habitant phasellus
-          hac ac neque ut ridiculus. Diam sodales quam eget pretium sociis et
-          vehicula leo facilisi, quis interdum purus pellentesque sociosqu odio
-          lectus ac, auctor euismod nulla volutpat laoreet sollicitudin
-          ridiculus ullamcorper. Magna bibendum feugiat tristique risus libero a
-          netus mus et, nullam potenti curabitur varius dignissim laoreet
-          facilisi. Justo dui curae mollis cursus cras commodo iaculis velit,
-          per odio platea dignissim euismod bibendum metus.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit orci quisque,
-          dignissim a eget ad quam porta sagittis parturient sem, luctus felis
-          consequat habitant eu urna egestas sed. Justo egestas faucibus netus
-          taciti ac augue aenean curae, dis bibendum donec duis rhoncus diam
-          non, nullam dictumst scelerisque mi tortor libero class. Mi pulvinar
-          rutrum primis mattis pharetra porttitor parturient blandit aliquam,
-          eleifend leo iaculis cursus cubilia litora risus diam quam, augue
-          senectus feugiat sollicitudin suscipit commodo eget praesent. Odio
-          tincidunt in facilisi pretium vulputate integer nec ligula eget,
-          inceptos placerat nullam lobortis semper scelerisque augue aliquam,
-          feugiat per porttitor pharetra ridiculus laoreet cubilia tempor. Magna
-          habitant aliquam orci velit commodo nostra at penatibus taciti,
-          suscipit volutpat pulvinar sem dignissim vivamus sed varius bibendum
-          pharetra, senectus himenaeos cursus per pretium lectus mollis
-          pellentesque. Pretium penatibus massa at pulvinar eros ligula congue
-          nisl blandit cubilia, ac maecenas morbi enim iaculis et parturient
-          torquent nam, pharetra arcu dictumst etiam elementum nullam orci
-          integer molestie. Metus imperdiet posuere torquent rhoncus nostra eros
-          etiam accumsan vivamus cursus, consequat risus scelerisque quis at
-          nascetur tortor eu elementum magnis auctor, duis in habitant phasellus
-          hac ac neque ut ridiculus. Diam sodales quam eget pretium sociis et
-          vehicula leo facilisi, quis interdum purus pellentesque sociosqu odio
-          lectus ac, auctor euismod nulla volutpat laoreet sollicitudin
-          ridiculus ullamcorper. Magna bibendum feugiat tristique risus libero a
-          netus mus et, nullam potenti curabitur varius dignissim laoreet
-          facilisi. Justo dui curae mollis cursus cras commodo iaculis velit,
-          per odio platea dignissim euismod bibendum metus.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit orci quisque,
-          dignissim a eget ad quam porta sagittis parturient sem, luctus felis
-          consequat habitant eu urna egestas sed. Justo egestas faucibus netus
-          taciti ac augue aenean curae, dis bibendum donec duis rhoncus diam
-          non, nullam dictumst scelerisque mi tortor libero class. Mi pulvinar
-          rutrum primis mattis pharetra porttitor parturient blandit aliquam,
-          eleifend leo iaculis cursus cubilia litora risus diam quam, augue
-          senectus feugiat sollicitudin suscipit commodo eget praesent. Odio
-          tincidunt in facilisi pretium vulputate integer nec ligula eget,
-          inceptos placerat nullam lobortis semper scelerisque augue aliquam,
-          feugiat per porttitor pharetra ridiculus laoreet cubilia tempor. Magna
-          habitant aliquam orci velit commodo nostra at penatibus taciti,
-          suscipit volutpat pulvinar sem dignissim vivamus sed varius bibendum
-          pharetra, senectus himenaeos cursus per pretium lectus mollis
-          pellentesque. Pretium penatibus massa at pulvinar eros ligula congue
-          nisl blandit cubilia, ac maecenas morbi enim iaculis et parturient
-          torquent nam, pharetra arcu dictumst etiam elementum nullam orci
-          integer molestie. Metus imperdiet posuere torquent rhoncus nostra eros
-          etiam accumsan vivamus cursus, consequat risus scelerisque quis at
-          nascetur tortor eu elementum magnis auctor, duis in habitant phasellus
-          hac ac neque ut ridiculus. Diam sodales quam eget pretium sociis et
-          vehicula leo facilisi, quis interdum purus pellentesque sociosqu odio
-          lectus ac, auctor euismod nulla volutpat laoreet sollicitudin
-          ridiculus ullamcorper. Magna bibendum feugiat tristique risus libero a
-          netus mus et, nullam potenti curabitur varius dignissim laoreet
-          facilisi. Justo dui curae mollis cursus cras commodo iaculis velit,
-          per odio platea dignissim euismod bibendum metus.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit orci quisque,
-          dignissim a eget ad quam porta sagittis parturient sem, luctus felis
-          consequat habitant eu urna egestas sed. Justo egestas faucibus netus
-          taciti ac augue aenean curae, dis bibendum donec duis rhoncus diam
-          non, nullam dictumst scelerisque mi tortor libero class. Mi pulvinar
-          rutrum primis mattis pharetra porttitor parturient blandit aliquam,
-          eleifend leo iaculis cursus cubilia litora risus diam quam, augue
-          senectus feugiat sollicitudin suscipit commodo eget praesent. Odio
-          tincidunt in facilisi pretium vulputate integer nec ligula eget,
-          inceptos placerat nullam lobortis semper scelerisque augue aliquam,
-          feugiat per porttitor pharetra ridiculus laoreet cubilia tempor. Magna
-          habitant aliquam orci velit commodo nostra at penatibus taciti,
-          suscipit volutpat pulvinar sem dignissim vivamus sed varius bibendum
-          pharetra, senectus himenaeos cursus per pretium lectus mollis
-          pellentesque. Pretium penatibus massa at pulvinar eros ligula congue
-          nisl blandit cubilia, ac maecenas morbi enim iaculis et parturient
-          torquent nam, pharetra arcu dictumst etiam elementum nullam orci
-          integer molestie. Metus imperdiet posuere torquent rhoncus nostra eros
-          etiam accumsan vivamus cursus, consequat risus scelerisque quis at
-          nascetur tortor eu elementum magnis auctor, duis in habitant phasellus
-          hac ac neque ut ridiculus. Diam sodales quam eget pretium sociis et
-          vehicula leo facilisi, quis interdum purus pellentesque sociosqu odio
-          lectus ac, auctor euismod nulla volutpat laoreet sollicitudin
-          ridiculus ullamcorper. Magna bibendum feugiat tristique risus libero a
-          netus mus et, nullam potenti curabitur varius dignissim laoreet
-          facilisi. Justo dui curae mollis cursus cras commodo iaculis velit,
-          per odio platea dignissim euismod bibendum metus.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit orci quisque,
-          dignissim a eget ad quam porta sagittis parturient sem, luctus felis
-          consequat habitant eu urna egestas sed. Justo egestas faucibus netus
-          taciti ac augue aenean curae, dis bibendum donec duis rhoncus diam
-          non, nullam dictumst scelerisque mi tortor libero class. Mi pulvinar
-          rutrum primis mattis pharetra porttitor parturient blandit aliquam,
-          eleifend leo iaculis cursus cubilia litora risus diam quam, augue
-          senectus feugiat sollicitudin suscipit commodo eget praesent. Odio
-          tincidunt in facilisi pretium vulputate integer nec ligula eget,
-          inceptos placerat nullam lobortis semper scelerisque augue aliquam,
-          feugiat per porttitor pharetra ridiculus laoreet cubilia tempor. Magna
-          habitant aliquam orci velit commodo nostra at penatibus taciti,
-          suscipit volutpat pulvinar sem dignissim vivamus sed varius bibendum
-          pharetra, senectus himenaeos cursus per pretium lectus mollis
-          pellentesque. Pretium penatibus massa at pulvinar eros ligula congue
-          nisl blandit cubilia, ac maecenas morbi enim iaculis et parturient
-          torquent nam, pharetra arcu dictumst etiam elementum nullam orci
-          integer molestie. Metus imperdiet posuere torquent rhoncus nostra eros
-          etiam accumsan vivamus cursus, consequat risus scelerisque quis at
-          nascetur tortor eu elementum magnis auctor, duis in habitant phasellus
-          hac ac neque ut ridiculus. Diam sodales quam eget pretium sociis et
-          vehicula leo facilisi, quis interdum purus pellentesque sociosqu odio
-          lectus ac, auctor euismod nulla volutpat laoreet sollicitudin
-          ridiculus ullamcorper. Magna bibendum feugiat tristique risus libero a
-          netus mus et, nullam potenti curabitur varius dignissim laoreet
-          facilisi. Justo dui curae mollis cursus cras commodo iaculis velit,
-          per odio platea dignissim euismod bibendum metus.
+        <v-card
+          class="text-left rounded-xxl text-card transparent mb-5 mini-hover-zoom"
+          elevation="3"
+          outlined
+        >
+          <v-img
+            :src="require('@/assets/backgrounds/semiback1.png')"
+            cover
+            height="300"
+            style="background-position: center center"
+            class="pa-10 background-img"
+          >
+            <h1 class="font-italic mb-1">What is SexEd+ ?</h1>
+            <h2 class="font-weight-regular">
+              Our project is a comprehensive hub designed to offer a myriad of
+              resources for a well-rounded sexual education experience. Dive
+              into thought-provoking articles that cover the spectrum from
+              foundational knowledge to intricate details about safe practices
+              and contraception methods. Personalize your experience by tracking
+              your sexual health on a dedicated dashboard and engage in
+              enlightening and anonymous discussions within our community.
+              Whether you're navigating the basics or seeking guidance on more
+              nuanced aspects, our project is committed to providing support and
+              guidance throughout your journey.
+            </h2>
+          </v-img>
+        </v-card>
+
+        <v-card
+          class="text-left rounded-xxl text-card transparent mb-5 mini-hover-zoom"
+          elevation="3"
+          outlined
+        >
+          <v-img
+            :src="require('@/assets/backgrounds/semiback2.png')"
+            cover
+            height="300"
+            style="background-position: center center"
+            class="pa-10 background-img"
+          >
+            <h1 class="font-italic my-3">Who can use SexEd+?</h1>
+            <h2 class="font-weight-regular">
+              This project is for everyone, with a special focus on young teens
+            navigating their first experiences with sexual education. We
+            understand the unique challenges this demographic faces, and our
+            platform is tailored to provide relevant information and a
+            supportive community.
+            </h2>
+          </v-img>
+        </v-card>
+
+        <v-card
+          class="text-left rounded-xxl text-card transparent mb-5 mini-hover-zoom"
+          elevation="3"
+          outlined
+        >
+          <v-img
+            :src="require('@/assets/backgrounds/semiback3.png')"
+            cover
+            height="300"
+            style="background-position: center center"
+            class="pa-10 background-img"
+          >
+            <h1 class="font-italic my-3">Who are we?</h1>
+            <h2 class="font-weight-regular">
+              We are a group of students participating in the 'Bits' hackathon,
+            driven by the commitment to developing technologies that enhance
+            sexual education. Our project incorporates trustworthy information
+            and media to create a user-friendly and reliable resource for all.
+            Together, we aim to break down barriers and make sexual education
+            accessible, dynamic, and enriching.
+            </h2>
+          </v-img>
+        </v-card>
+
+        <div class="text-center">
+          <h3 class="font-weight-regular">
+            Your engagement is essential to our mission. We appreciate your
+            participation in making sexual education more open and informed.
+            Feel free to explore, track your journey, connect with others, and,
+            most importantly, share your thoughts. Your feedback is valuable and
+            welcomed as we strive to create a platform that truly meets your
+            needs.
+          </h3>
         </div>
       </v-col>
     </v-row>
@@ -191,31 +131,33 @@
 export default {
   name: "HelloWorld",
 
-  data: () => ({
-    logoOpacity: 1,
-    logoScale: 1,
-    lastScrollTop: 0,
-    buttons: [
-      {
-        title: "Conecta",
-        background: require("../assets/buttons/button1.svg"),
-        image: require("../assets/clipart/connect.svg"),
-        text: "Explore the essentials of sexual health . From anatomy to safe practices and a FAQ section, empower yourself with knowledge for informed decision-making.",
-      },
-      {
-        title: "Aprende",
-        background: require("../assets/buttons/button2.svg"),
-        image: require("../assets/clipart/learn.svg"),
-        text: "Anonymously share, ask, and discuss in the public forum. Join a supportive community to navigate sexual education topics without judgment. Your voice matters here.",
-      },
-      {
-        title: "Decide",
-        background: require("../assets/buttons/button3.svg"),
-        image: require("../assets/clipart/ask.svg"),
-        text: "Input your data for a personalized dashboard. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health",
-      },
-    ],
-  }),
+  data: function () {
+    return {
+      logoOpacity: 1,
+      logoScale: 1,
+      lastScrollTop: 0,
+      buttons: [
+        {
+          title: "connect",
+          background: require("../assets/buttons/button1.svg"),
+          image: require("../assets/clipart/connect.svg"),
+          text: this.$t("home.buttons.connect.subtitle"),
+        },
+        {
+          title: "learn",
+          background: require("../assets/buttons/button2.svg"),
+          image: require("../assets/clipart/learn.svg"),
+          text: this.$t("home.buttons.learn.subtitle"),
+        },
+        {
+          title: "track",
+          background: require("../assets/buttons/button3.svg"),
+          image: require("../assets/clipart/ask.svg"),
+          text: this.$t("home.buttons.track.subtitle"),
+        },
+      ],
+    };
+  },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
@@ -223,6 +165,10 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    navigateTo(section) {
+      // Use Vue Router to navigate to the specified route
+      this.$router.push({ name: section });
+    },
     handleScroll() {
       const st = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -243,6 +189,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.text-card {
+  border: 1px solid black;
+}
 .fullLogo {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -252,9 +201,27 @@ export default {
 
   &:hover {
     transform: scale(1.25);
+    cursor: pointer;
   }
 }
 
+.mini-hover-zoom {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+
+
+.background-component {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+    url("../assets/backgrounds/back1.png") center/cover no-repeat;
+}
 
 .circle-container {
   position: relative;
