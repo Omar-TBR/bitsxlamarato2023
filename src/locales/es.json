@@ -27,6 +27,18 @@
     },
     "footer":{
         "createdBy": "Creado por"
+    },
+    "learn": {
+        "title": "Aprende",
+        "description": "Bienvenido a la sección de Aprendizaje, tu puerta de entrada a la educación sexual integral. Aquí descubrirás los conceptos básicos de la salud sexual, abarcando temas desde anatomía hasta prácticas seguras y métodos anticonceptivos.",
+        "topic1": {
+            "title": "Para prevenir las enfermedades de transmisión sexual, incluido el VIH",
+            "body": "Se debe utilizar preservativos masculinos o femeninos y barreras de latex desde el primer momento de la relación. Es imprescindible tener una buena información sobre cuáles son los riesgos y cómo evitarlos. Se debe ser muy consciente de que si todo el mundo se protege se evitan las ETS/VIH y los embarazos no deseados."
+        },
+        "topic2": {
+            "title": "Cómo se transmiten las ETS?",
+            "body": "-Mediante los fluidos corporales (el semen, los flujos vaginales y la sangre). -También puede darse lo que se conoce como transmisión vertical, que sucede si una mujer infectada queda embarazada y le transmite la enfermedad a su hijo antes de nacer."
+        }
     }
-  }
+}
   

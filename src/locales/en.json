@@ -28,6 +28,18 @@
     "footer":{
         "createdBy": "Created by",
         "resources": "Other resources"
+    },
+    "learn": {
+        "title": "Learn",
+        "description": "Welcome to the Learning section, your gateway to comprehensive sexual education. Here, you'll discover the basics of sexual health, covering topics from anatomy to safe practices and contraception methods. Dive into engaging articles that provide in-depth insights, and explore a curated FAQ section addressing common questions. Equip yourself with the knowledge needed to make informed decisions about your sexual well-being.",
+        "topic1": {
+            "title": "To prevent sexually transmitted deseases, including the HIV",
+            "body": "-Masculine or femenine condoms and latex barriers must be used since the first moment of the relationship.\n -It is essential to have good information about which are the risks and how to avoid them.\n -One must be aware that if everybody is protected, STDs and unwanted pregnancy are avoided."
+        },
+        "topic2": {
+            "title": "How are STDs transmitted?",
+            "body": "- Through the body fluids (semen, vaginal fluids and blood)\n - It is also possible what is known as vertical transmission, that happens if an infected woman becomes pregnant and transmits the disease to her child before being born."
+        }
     }
-  }
+}
   

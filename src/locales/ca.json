@@ -24,6 +24,18 @@
 
     },
     "settings": {
+    },
+    "learn": {
+        "title": "Aprèn",
+        "description": "Benvingut a la secció d'Aprenentatge, la vostra porta d'entrada a l'educació sexual integral. Aquí descobrireu els conceptes bàsics de la salut sexual, que cobreixen temes des de l'anatomia fins a pràctiques segures i mètodes anticonceptius.",
+        "topic1": {
+            "title": "Per prevenir les infeccions de transmissió sexual, inclòs el VIH",
+            "body": "-Cal fer servir preservatius masculins o femenins i barreres de làtex des del primer moment de la relació. -És imprescindible tenir una bona informació sobre quins són els riscos i com evitar-los. -Cal ser molt conscient que si tothom es protegeix s’eviten les infeccions de transmissió sexual/VIH i els embarassos no desitjats."
+        },
+        "topic2": {
+            "title": "Com es transmeten les ITS?",
+            "body": "-Per mitjà dels fluids corporals (el semen, els fluixos vaginals i la sang). -També pot donar-se el que s'anomena transmissió vertical, que succeeix si una dona infectada queda embarassada i li transmet la infecció al seu fill abans de néixer."
+        }
     }
   }
   
