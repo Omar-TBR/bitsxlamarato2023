@@ -18,12 +18,22 @@
       }
     },
     "track": {
-
+      "title": "Seguiment",
+      "subtitle": "Et presentem Seguiment, el teu centre personalitzat per monitorar i optimitzar la teva salut sexual. Introdueix les teves dades de manera segura per crear un tauler personalitzat que registra aspectes essencials del teu benestar, com ara cicles menstruats, mètodes anticonceptius i freqüència d'activitat sexual. Rep recomanacions personalitzades basades en la teva informació, permetent-te prendre decisions proactives sobre la teva salut. Seguiment és el teu company en el viatge cap a un enfocament més saludable i informat de la teva salut sexual.",
+      "warningTitle": "¡Properament la Funció de Seguiment!",
+      "warningSubtitle": "¡Hola! Estem emocionats de informar-te que la nostra funció de 'Seguiment' està actualment en construcció per oferir-te una experiència encara millor. Agraïm la teva paciència mentre treballem en aquesta millora. Estigues atent a les actualitzacions i gràcies per ser part del nostre camí cap a un tu més saludable i informat."
     },
     "connect": {
-
+      "title": "Connectar",
+      "subtitle": "Embarca't en un viatge de diàleg obert i suport en aquesta secció. Aquest espai està dissenyat per a la participació anònima, oferint-te un fòrum on pots compartir lliurement les teves experiències, buscar consells i participar en discussions relacionades amb l'educació sexual. Connecta amb una comunitat de persones que estan navegant camins semblants, fes preguntes i contribueix a un entorn que fomenta la comprensió i l'empatia. La teva veu compta, i aquí s'escolta sense judici.",
+      "warningTitle": "¡Properament la Funció de Seguiment!",
+      "warningSubtitle": "¡Hola! Estem emocionats de informar-te que la nostra funció de 'Seguiment' està actualment en construcció per oferir-te una experiència encara millor. Agraïm la teva paciència mentre treballem en aquesta millora. Estigues atent a les actualitzacions i gràcies per ser part del nostre camí cap a un tu més saludable i informat."
     },
     "settings": {
+    },
+    "footer": {
+      "createdBy": "Creat per",
+      "resources": "Altres recursos"
     }
   }
   

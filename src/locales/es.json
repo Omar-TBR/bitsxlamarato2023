@@ -1,32 +1,37 @@
 {
-    "home": {
-      "slogan": "Codificando la sexualidad del futuro",
-      "sloganSubtitle": "Tu espacio de educación sexual",
-      "buttons": {
-        "connect": {
-            "title": "Conecta",
-            "subtitle": "Comparte, pregunta y debate de forma anónima en el foro público. Únete a una comunidad de apoyo para tratar temas de educación sexual sin ser juzgado. Tu voz cuenta aquí."
-        },
-        "learn": {
-            "title": "Aprende",
-            "subtitle": "Explora los aspectos esenciales de la salud sexual. Desde la anatomía hasta las prácticas seguras, pasando por una sección de preguntas frecuentes."
-        },
-        "track": {
-            "title": "Decide",
-            "subtitle": "Introduce tus datos para un seguimiento personalizado. Controla los ciclos menstruales, la anticoncepción y mucho más. Recibe recomendaciones para gestionar de forma proactiva tu salud sexual."
-        }
+  "home": {
+    "slogan": "Codificando la sexualidad del futuro",
+    "sloganSubtitle": "Tu espacio de educación sexual",
+    "buttons": {
+      "connect": {
+        "title": "Conecta",
+        "subtitle": "Comparte, pregunta y debate de forma anónima en el foro público. Únete a una comunidad de apoyo para tratar temas de educación sexual sin ser juzgado. Tu voz cuenta aquí."
+      },
+      "learn": {
+        "title": "Aprende",
+        "subtitle": "Explora los aspectos esenciales de la salud sexual. Desde la anatomía hasta las prácticas seguras, pasando por una sección de preguntas frecuentes."
+      },
+      "track": {
+        "title": "Decide",
+        "subtitle": "Introduce tus datos para un seguimiento personalizado. Controla los ciclos menstruales, la anticoncepción y mucho más. Recibe recomendaciones para gestionar de forma proactiva tu salud sexual."
       }
-    },
-    "track": {
-
-    },
-    "connect": {
-
-    },
-    "settings": {
-    },
-    "footer":{
-        "createdBy": "Creado por"
     }
+  },
+  "track": {
+    "title": "Seguimiento",
+    "subtitle": "Te presentamos Seguimiento, tu centro personalizado para monitorear y optimizar tu salud sexual. Ingresa tus datos de manera segura para crear un panel personalizado que registra aspectos esenciales de tu bienestar, como ciclos menstruales, métodos anticonceptivos y frecuencia de actividad sexual. Recibe recomendaciones personalizadas basadas en tu información, permitiéndote tomar decisiones proactivas sobre tu salud. Seguimiento es tu compañero en el viaje hacia un enfoque más saludable e informado de tu bienestar sexual.",
+    "warningTitle": "¡Próximamente la Función de Seguimiento!",
+    "warningSubtitle": "¡Hola! Estamos emocionados de informarte que nuestra función de 'Seguimiento' está actualmente en construcción para brindarte una experiencia aún mejor. Agradecemos tu paciencia mientras trabajamos en esta mejora. Mantente atento a las actualizaciones y gracias por ser parte de nuestro camino hacia un tú más saludable e informado."
+  },
+  "connect": {
+    "title": "Conectar",
+    "subtitle": "Embárcate en un viaje de diálogo abierto y apoyo en esta sección. Este espacio está diseñado para participación anónima, brindándote un foro donde puedes compartir libremente tus experiencias, buscar consejos y participar en discusiones relacionadas con la educación sexual. Conéctate con una comunidad de personas que están navegando caminos similares, haz preguntas y contribuye a un entorno que fomenta la comprensión y la empatía. Tu voz importa, y aquí se escucha sin juicio.",
+    "warningTitle": "¡Próximamente la Función de Seguimiento!",
+    "warningSubtitle": "¡Hola! Estamos emocionados de informarte que nuestra función de 'Seguimiento' está actualmente en construcción para brindarte una experiencia aún mejor. Agradecemos tu paciencia mientras trabajamos en esta mejora. Mantente atento a las actualizaciones y gracias por ser parte de nuestro camino hacia un tú más saludable e informado."
+  },
+  "settings": {},
+  "footer": {
+    "createdBy": "Creado por",
+    "resources": "Otros recursos"
   }
-  
+}
