@@ -41,7 +41,7 @@
                   <v-col cols="12" class="text-right title">
                     <h2 class="mb-10">
                       {{ $t("home.buttons." + button.title + ".title") }}
-                    </h2>Other resources
+                    </h2>
                     <h5 class="subtitle font-weight-regular">
                       {{ $t("home.buttons." + button.title + ".subtitle") }}
                     </h5>
