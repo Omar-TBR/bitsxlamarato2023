@@ -15,7 +15,20 @@
             "title": "Decideix",
             "subtitle": "Introdueix les teves dades per a un seguiment personalitzat. Controla els cicles menstruals, l'anticoncepció i molt més. Rep recomanacions per a gestionar de manera proactiva la teva salut sexual."
         }
-      }
+      },
+      "about": {
+          "title": "Què és SexEd+ ?",
+          "body": "El nostre projecte és un centre integral dissenyat per oferir una gran quantitat de recursos per a una experiència educativa sexual completa. Profunditza en articles que et portaran des de els coneixements fonamentals fins als detalls intricats sobre pràctiques segures i mètodes anticonceptius. Personalitza la teva experiència fent un seguiment de la teva salut sexual en un tauler dedicat i participa en discussions enriquidores i anònimes dins de la nostra comunitat. Ja siguis navegant pels conceptes bàsics o buscant orientació en aspectes més subtils, el nostre projecte està compromès a proporcionar suport i orientació al llarg del teu viatge."
+      },
+    "who": {
+        "title": "Per a qui és SexEd+ ?",
+        "body": "Aquest projecte és per a tothom, amb un enfocament especial en adolescents joves que estan navegant per les seves primeres experiències amb l'educació sexual. Entenem els desafiaments únics que afronta aquest grup demogràfic, i la nostra plataforma està adaptada per proporcionar informació rellevant i una comunitat de suport."
+    },
+    "us": {
+        "title": "Qui som?",
+        "body": "Som un grup d'estudiants que participem en l'hackató 'Bits', impulsats pel compromís de desenvolupar tecnologies que millorin l'educació sexual. El nostre projecte incorpora informació i mitjans de confiança per crear un recurs amigable i fiable per a tothom. Junts, busquem trencar barreres i fer que l'educació sexual sigui accessible, dinàmica i enriquidora."
+    },
+    "bottom": "La teva implicació és essencial per a la nostra missió. Apreciam la teva participació en fer més oberta i informada l'educació sexual. Sent-te lliure d'explorar, fer un seguiment del teu camí, connectar amb altres i, sobretot, compartir els teus pensaments. La teva opinió és valuosa i benvinguda mentre aspirem a crear una plataforma que realment satisfaci les teves necessitats."
     },
     "track": {
       "title": "Seguiment",
@@ -31,6 +44,17 @@
     },
     "settings": {
     },
+    "learn": {
+        "title": "Aprèn",
+        "description": "Benvingut a la secció d'Aprenentatge, la vostra porta d'entrada a l'educació sexual integral. Aquí descobrireu els conceptes bàsics de la salut sexual, que cobreixen temes des de l'anatomia fins a pràctiques segures i mètodes anticonceptius.",
+        "topic1": {
+            "title": "Per prevenir les infeccions de transmissió sexual, inclòs el VIH",
+            "body": "-Cal fer servir preservatius masculins o femenins i barreres de làtex des del primer moment de la relació. -És imprescindible tenir una bona informació sobre quins són els riscos i com evitar-los. -Cal ser molt conscient que si tothom es protegeix s’eviten les infeccions de transmissió sexual/VIH i els embarassos no desitjats."
+        },
+        "topic2": {
+            "title": "Com es transmeten les ITS?",
+            "body": "-Per mitjà dels fluids corporals (el semen, els fluixos vaginals i la sang). -També pot donar-se el que s'anomena transmissió vertical, que succeeix si una dona infectada queda embarassada i li transmet la infecció al seu fill abans de néixer."
+        }
     "footer": {
       "createdBy": "Creat per",
       "resources": "Altres recursos"

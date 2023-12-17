@@ -1,22 +1,35 @@
 {
-  "home": {
-    "slogan": "Coding the sexuality of the future",
-    "sloganSubtitle": "Your sexual education space",
-    "buttons": {
-      "connect": {
-        "title": "Connect",
-        "subtitle": "Anonymously share, ask, and discuss in the public forum. Join a supportive community to navigate sexual education topics without judgment. Your voice matters here."
+    "home": {
+      "slogan": "Coding the sexuality of the future",
+      "sloganSubtitle": "Your sexual education space",
+      "buttons": {
+        "connect": {
+            "title": "Connect",
+            "subtitle": "Anonymously share, ask, and discuss in the public forum. Join a supportive community to navigate sexual education topics without judgment. Your voice matters here."
+        },
+        "learn": {
+            "title": "Learn",
+            "subtitle": "Explore the essentials of sexual health . From anatomy to safe practices and a FAQ section, empower yourself with knowledge for informed decision-making."
+        },
+        "track": {
+            "title": "Decide",
+            "subtitle": "Input your data for a personalized tracking. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health."
+        }
       },
-      "learn": {
-        "title": "Learn",
-        "subtitle": "Explore the essentials of sexual health . From anatomy to safe practices and a FAQ section, empower yourself with knowledge for informed decision-making."
+      "about": {
+          "title": "What is SexEd+ ?",
+          "body": "Our project is a comprehensive hub designed to offer a myriad of resources for a well-rounded sexual education experience. Dive into thought-provoking articles that cover the spectrum from foundational knowledge to intricate details about safe practices and contraception methods. Personalize your experience by tracking your sexual health on a dedicated dashboard and engage in enlightening and anonymous discussions within our community. Whether you're navigating the basics or seeking guidance on more nuanced aspects, our project is committed to providing support and guidance throughout your journey."
       },
-      "track": {
-        "title": "Decide",
-        "subtitle": "Input your data for a personalized tracking. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health."
-      }
-    }
-  },
+    "who": {
+        "title": "Who can use SexEd+ ?",
+        "body": "This project is for everyone, with a special focus on young teens navigating their first experiences with sexual education. We understand the unique challenges this demographic faces, and our platform is tailored to provide relevant information and a supportive community."
+    },
+    "us": {
+        "title": "Who are we?",
+        "body": "We are a group of students participating in the 'Bits' hackathon, driven by the commitment to developing technologies that enhance sexual education. Our project incorporates trustworthy information and media to create a user-friendly and reliable resource for all. Together, we aim to break down barriers and make sexual education accessible, dynamic, and enriching."
+    },
+    "bottom": "Your engagement is essential to our mission. We appreciate your participation in making sexual education more open and informed. Feel free to explore, track your journey, connect with others, and, most importantly, share your thoughts. Your feedback is valuable and welcomed as we strive to create a platform that truly meets your needs."
+    },
   "track": {
     "title": "Track",
     "subtitle": "Introducing Track, your personalized hub for monitoring and optimizing your sexual health. Input your data securely to create a customized dashboard that tracks essential aspects of your well-being, such as menstrual cycles, contraception methods, and sexual activity frequency. Receive tailored recommendations based on your input, empowering you to make proactive decisions about your health. Track is your companion in the journey towards a healthier and more informed approach to your sexual well-being",
@@ -29,9 +42,22 @@
     "warningTitle": "Track Feature Coming Soon!",
     "warningSubtitle": "Hey there! We're excited to let you know that our 'Track' feature is currently under construction to bring you an even better experience. We appreciate your patience as we work on this enhancement. Stay tuned for updates, and thank you for being a part of our journey towards a healthier and more informed you!"
   },
-  "settings": {},
-  "footer": {
-    "createdBy": "Created by",
-    "resources": "Other resources"
-  }
+    "settings": {
+    },
+    "footer":{
+        "createdBy": "Created by",
+        "resources": "Other resources"
+    },
+    "learn": {
+        "title": "Learn",
+        "description": "Welcome to the Learning section, your gateway to comprehensive sexual education. Here, you'll discover the basics of sexual health, covering topics from anatomy to safe practices and contraception methods. Dive into engaging articles that provide in-depth insights, and explore a curated FAQ section addressing common questions. Equip yourself with the knowledge needed to make informed decisions about your sexual well-being.",
+        "topic1": {
+            "title": "To prevent sexually transmitted deseases, including the HIV",
+            "body": "-Masculine or femenine condoms and latex barriers must be used since the first moment of the relationship.\n -It is essential to have good information about which are the risks and how to avoid them.\n -One must be aware that if everybody is protected, STDs and unwanted pregnancy are avoided."
+        },
+        "topic2": {
+            "title": "How are STDs transmitted?",
+            "body": "- Through the body fluids (semen, vaginal fluids and blood)\n - It is also possible what is known as vertical transmission, that happens if an infected woman becomes pregnant and transmits the disease to her child before being born."
+        }
+    }
 }
