@@ -90,119 +90,150 @@
 </template>
 <script>
 import threadComponent from "@/components/threadComponent.vue";
+import axios from 'axios'
 
 export default {
   components: {
     threadComponent,
   },
-  data: function () {
-    return {
+  data: () => ({
       currentThread: null,
-      mainTopics: [
-        {
-          title: "Sexual Education Basics",
-          subtitle:
-            "Anatomy and Physiology, Puberty and Development, Safe Sex Practices and Contraception Methods",
-          //PILLAR THREADS BACK Y CLASIFICARLOS
-            threads: [
-            {
-              description: "We explain the basics of how to use a condom",
-              id: 2,
-              title: "Best way to use a condom",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-17",
-              likes: 0,
-            },
-            {
-              description: "How do I know if I have an STD?",
-              id: 2,
-              title: "Do I have an STD?",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-16",
-              likes: 0,
-            },
-          ],
-        },
-        {
-          title: "Relationships and Communication",
-          subtitle:
-            "Building Healthy Relationships, Effective Communication in Intimate Settings, Consent and Boundaries, Navigating Relationship Challenges",
-          threads: [
-            {
-              description: "We explain the basics of how to use a condom",
-              id: 2,
-              title: "Best way to use a condom",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-17",
-              likes: 0,
-            },
-            {
-              description: "How do I know if I have an STD?",
-              id: 2,
-              title: "Do I have an STD?",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-16",
-              likes: 0,
-            },
-          ],
-        },
-        {
-          title: "LGBTQ+ Topics",
-          subtitle:
-            "LGBTQ+ Sexual Health, Coming Out Stories and Advice and LGBTQ+ Relationships",
-          threads: [
-            {
-              description: "We explain the basics of how to use a condom",
-              id: 2,
-              title: "Best way to use a condom",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-17",
-              likes: 0,
-            },
-            {
-              description: "How do I know if I have an STD?",
-              id: 2,
-              title: "Do I have an STD?",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-16",
-              likes: 0,
-            },
-          ],
-        },
-        {
-          title: "FAQs and Q&A",
-          subtitle:
-            "General Questions and Answers, Ask the Experts and Common Concerns and Clarifications",
-          threads: [
-            {
-              description: "We explain the basics of how to use a condom",
-              id: 2,
-              title: "Best way to use a condom",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-17",
-              likes: 0,
-            },
-            {
-              description: "How do I know if I have an STD?",
-              id: 2,
-              title: "Do I have an STD?",
-              theme: "Sexual Education Basics",
-              creator: 2,
-              created_at: "2023-12-16",
-              likes: 0,
-            },
-          ],
-        },
-      ],
-    };
+      mainTopics: []
+    }),
+  mounted: 
+    async function () {
+    var themes = ["Sexual Education Basics", "Relationships and Communication", "LGBTQ+ Topics", "FAQs and Q&A"]
+    var subtitles = ["Anatomy and Physiology, Puberty and Development, Safe Sex Practices and Contraception Methods", 
+    "Building Healthy Relationships, Effective Communication in Intimate Settings, Consent and Boundaries, Navigating Relationship Challenges",
+    "LGBTQ+ Sexual Health, Coming Out Stories and Advice and LGBTQ+ Relationships",
+    "General Questions and Answers, Ask the Experts and Common Concerns and Clarifications"]
+    var res = []
+    var i = 0
+    for (var theme in themes) {
+      console.log(theme)
+      var th = {title: themes[i], subtitle: subtitles[i], threads:[]}
+      await axios
+      .get('http://localhost:8000/Bitsx/threads?theme=' + themes[i] )
+      .then(response => {
+        if (response.data['length'] == 0) return;
+        th["threads"].push(response.data['0']);
+      })
+      .catch(error => {
+        console.log(error)
+      })
+      i += 1
+      res.push(th)
+    }
+    this.mainTopics = res;
   },
+    // return {
+    //   currentThread: null,
+    //   mainTopics: res
+      // [
+      //   {
+      //     title: "Sexual Education Basics",
+      //     subtitle:
+      //       "Anatomy and Physiology, Puberty and Development, Safe Sex Practices and Contraception Methods",
+      //     //PILLAR THREADS BACK Y CLASIFICARLOS
+      //       threads: [
+      //       {
+      //         description: "We explain the basics of how to use a condom",
+      //         id: 2,
+      //         title: "Best way to use a condom",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-17",
+      //         likes: 0,
+      //       },
+      //       {
+      //         description: "How do I know if I have an STD?",
+      //         id: 2,
+      //         title: "Do I have an STD?",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-16",
+      //         likes: 0,
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: "Relationships and Communication",
+      //     subtitle:
+      //       "Building Healthy Relationships, Effective Communication in Intimate Settings, Consent and Boundaries, Navigating Relationship Challenges",
+      //     threads: [
+      //       {
+      //         description: "We explain the basics of how to use a condom",
+      //         id: 2,
+      //         title: "Best way to use a condom",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-17",
+      //         likes: 0,
+      //       },
+      //       {
+      //         description: "How do I know if I have an STD?",
+      //         id: 2,
+      //         title: "Do I have an STD?",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-16",
+      //         likes: 0,
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: "LGBTQ+ Topics",
+      //     subtitle:
+      //       "LGBTQ+ Sexual Health, Coming Out Stories and Advice and LGBTQ+ Relationships",
+      //     threads: [
+      //       {
+      //         description: "We explain the basics of how to use a condom",
+      //         id: 2,
+      //         title: "Best way to use a condom",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-17",
+      //         likes: 0,
+      //       },
+      //       {
+      //         description: "How do I know if I have an STD?",
+      //         id: 2,
+      //         title: "Do I have an STD?",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-16",
+      //         likes: 0,
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: "FAQs and Q&A",
+      //     subtitle:
+      //       "General Questions and Answers, Ask the Experts and Common Concerns and Clarifications",
+      //     threads: [
+      //       {
+      //         description: "We explain the basics of how to use a condom",
+      //         id: 2,
+      //         title: "Best way to use a condom",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-17",
+      //         likes: 0,
+      //       },
+      //       {
+      //         description: "How do I know if I have an STD?",
+      //         id: 2,
+      //         title: "Do I have an STD?",
+      //         theme: "Sexual Education Basics",
+      //         creator: 2,
+      //         created_at: "2023-12-16",
+      //         likes: 0,
+      //       },
+      //     ],
+      //   },
+      // ],
+    // },
+  // },
   methods: {
     setCurrentThread(thread) {
       this.currentThread = thread;

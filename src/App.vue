@@ -154,6 +154,9 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
   name: "App",
 
@@ -196,11 +199,18 @@ export default {
       this.username = "";
       this.password = "";
     },
-    login() {
-      // Add your login logic here
-      // For demonstration purposes, just log the entered credentials
-      console.log("Username:", this.username);
-      console.log("Password:", this.password);
+    async login() {
+        await axios
+        .put('http://localhost:8000/Bitsx/users/login', {
+          username: this.username,
+          password: this.password
+        })
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.log(error)
+        })
 
       // Close the dialog after login attempt
       this.closeLoginDialog();
