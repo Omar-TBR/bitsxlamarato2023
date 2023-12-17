@@ -5,16 +5,9 @@
       <v-col cols="5">
         <div class="d-flex flex-row justify-center">
           <div class="text-left mr-n5">
-            <h1 class="display-1 font-weight-bold pt-5 pb-3">Connect</h1>
+            <h1 class="display-1 font-weight-bold pt-5 pb-3">  {{ $t("connect.title") }}</h1>
             <h3 class="font-weight-regular">
-              Embark on a journey of open discourse and support in this section.
-              This space is designed for anonymous engagement, providing a forum
-              where you can freely share your experiences, seek advice, and
-              participate in discussions related to sexual education. Connect
-              with a community of individuals navigating similar paths, ask
-              questions, and contribute to an environment that fosters
-              understanding and empathy. Your voice matters, and here, it is
-              heard without judgment!
+              {{ $t("connect.subtitle") }}
             </h3>
           </div>
           <v-img

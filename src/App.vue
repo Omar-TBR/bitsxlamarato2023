@@ -37,7 +37,7 @@
           <router-link to="/">
             <v-img
               contain
-              :src="require('./assets/logo.svg')"
+              :src="require('@/assets/logo.svg')"
               transition="scale-transition"
               width="60"
             />
@@ -114,7 +114,11 @@
             <h5 class="mr-10">Erik Blazquez</h5>
             <h5>Miquel Comas</h5>
           </div>
-          <h5>Omar T. Butt</h5>
+          <div class="d-flex flex-row justify-start">
+            <h5 class="mr-12">Omar T. Butt</h5>
+            <h5>Joan Vinyals</h5>
+          </div>
+          <h5></h5>
         </v-col>
         <v-col>
           <h3>{{ $t("footer.resources") }}</h3>

@@ -1,33 +1,37 @@
 {
-    "home": {
-      "slogan": "Coding the sexuality of the future",
-      "sloganSubtitle": "Your sexual education space",
-      "buttons": {
-        "connect": {
-            "title": "Connect",
-            "subtitle": "Anonymously share, ask, and discuss in the public forum. Join a supportive community to navigate sexual education topics without judgment. Your voice matters here."
-        },
-        "learn": {
-            "title": "Learn",
-            "subtitle": "Explore the essentials of sexual health . From anatomy to safe practices and a FAQ section, empower yourself with knowledge for informed decision-making."
-        },
-        "track": {
-            "title": "Decide",
-            "subtitle": "Input your data for a personalized tracking. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health."
-        }
+  "home": {
+    "slogan": "Coding the sexuality of the future",
+    "sloganSubtitle": "Your sexual education space",
+    "buttons": {
+      "connect": {
+        "title": "Connect",
+        "subtitle": "Anonymously share, ask, and discuss in the public forum. Join a supportive community to navigate sexual education topics without judgment. Your voice matters here."
+      },
+      "learn": {
+        "title": "Learn",
+        "subtitle": "Explore the essentials of sexual health . From anatomy to safe practices and a FAQ section, empower yourself with knowledge for informed decision-making."
+      },
+      "track": {
+        "title": "Decide",
+        "subtitle": "Input your data for a personalized tracking. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health."
       }
-    },
-    "track": {
-
-    },
-    "connect": {
-
-    },
-    "settings": {
-    },
-    "footer":{
-        "createdBy": "Created by",
-        "resources": "Other resources"
     }
+  },
+  "track": {
+    "title": "Track",
+    "subtitle": "Introducing Track, your personalized hub for monitoring and optimizing your sexual health. Input your data securely to create a customized dashboard that tracks essential aspects of your well-being, such as menstrual cycles, contraception methods, and sexual activity frequency. Receive tailored recommendations based on your input, empowering you to make proactive decisions about your health. Track is your companion in the journey towards a healthier and more informed approach to your sexual well-being",
+    "warningTitle": "Track Feature Coming Soon!",
+    "warningSubtitle": "Hey there! We're excited to let you know that our 'Track' feature is currently under construction to bring you an even better experience. We appreciate your patience as we work on this enhancement. Stay tuned for updates, and thank you for being a part of our journey towards a healthier and more informed you!"
+  },
+  "connect": {
+    "title": "Connect",
+    "subtitle": "Embark on a journey of open discourse and support in this section. This space is designed for anonymous engagement, providing a forum where you can freely share your experiences, seek advice, and participate in discussions related to sexual education. Connect with a community of individuals navigating similar paths, ask questions, and contribute to an environment that fosters understanding and empathy. Your voice matters, and here, it is heard without judgment!",
+    "warningTitle": "Track Feature Coming Soon!",
+    "warningSubtitle": "Hey there! We're excited to let you know that our 'Track' feature is currently under construction to bring you an even better experience. We appreciate your patience as we work on this enhancement. Stay tuned for updates, and thank you for being a part of our journey towards a healthier and more informed you!"
+  },
+  "settings": {},
+  "footer": {
+    "createdBy": "Created by",
+    "resources": "Other resources"
   }
-  
+}
