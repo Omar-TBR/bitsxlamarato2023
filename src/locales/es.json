@@ -15,7 +15,20 @@
             "title": "Decide",
             "subtitle": "Introduce tus datos para un seguimiento personalizado. Controla los ciclos menstruales, la anticoncepción y mucho más. Recibe recomendaciones para gestionar de forma proactiva tu salud sexual."
         }
-      }
+      },
+      "about": {
+          "title": "Qué es SexEd+ ?",
+      "body": "Nuestro proyecto es un centro integral diseñado para ofrecer una gran variedad de recursos para una experiencia educativa sexual completa. Sumérgete en artículos reflexivos que abarcan desde conocimientos fundamentales hasta detalles intrincados sobre prácticas seguras y métodos anticonceptivos. Personaliza tu experiencia haciendo un seguimiento de tu salud sexual en un panel dedicado y participa en discusiones esclarecedoras y anónimas dentro de nuestra comunidad. Ya sea que estés explorando los conceptos básicos o buscando orientación en aspectos más sutiles, nuestro proyecto se compromete a brindar apoyo y orientación a lo largo de tu trayecto."
+    },
+    "who": {
+        "title": "Para quién es SexEd+ ?",
+        "body": "Este proyecto es para todos, con un enfoque especial en adolescentes jóvenes que están navegando por sus primeras experiencias con la educación sexual. Entendemos los desafíos únicos que enfrenta este grupo demográfico, y nuestra plataforma está diseñada para proporcionar información relevante y una comunidad de apoyo."
+    },
+    "us": {
+        "title": "Quién somos?",
+        "body": "Somos un grupo de estudiantes que participamos en el hackatón 'Bits', impulsados por el compromiso de desarrollar tecnologías que mejoren la educación sexual. Nuestro proyecto incorpora información y medios confiables para crear un recurso amigable y fiable para todos. Juntos, buscamos derribar barreras y hacer que la educación sexual sea accesible, dinámica y enriquecedora."
+    },
+    "bottom": "Tu compromiso es esencial para nuestra misión. Agradecemos tu participación en hacer la educación sexual más abierta e informada. Siéntete libre de explorar, seguir tu camino, conectar con otros y, lo más importante, compartir tus pensamientos. Tu retroalimentación es valiosa y bienvenida mientras nos esforzamos por crear una plataforma que realmente satisfaga tus necesidades."
     },
     "track": {
 

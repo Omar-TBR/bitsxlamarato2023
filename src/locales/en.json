@@ -15,7 +15,20 @@
             "title": "Decide",
             "subtitle": "Input your data for a personalized tracking. Monitor menstrual cycles, contraception, and more. Receive recommendations to proactively manage your sexual health."
         }
-      }
+      },
+      "about": {
+          "title": "What is SexEd+ ?",
+          "body": "Our project is a comprehensive hub designed to offer a myriad of resources for a well-rounded sexual education experience. Dive into thought-provoking articles that cover the spectrum from foundational knowledge to intricate details about safe practices and contraception methods. Personalize your experience by tracking your sexual health on a dedicated dashboard and engage in enlightening and anonymous discussions within our community. Whether you're navigating the basics or seeking guidance on more nuanced aspects, our project is committed to providing support and guidance throughout your journey."
+      },
+    "who": {
+        "title": "Who can use SexEd+ ?",
+        "body": "This project is for everyone, with a special focus on young teens navigating their first experiences with sexual education. We understand the unique challenges this demographic faces, and our platform is tailored to provide relevant information and a supportive community."
+    },
+    "us": {
+        "title": "Who are we?",
+        "body": "We are a group of students participating in the 'Bits' hackathon, driven by the commitment to developing technologies that enhance sexual education. Our project incorporates trustworthy information and media to create a user-friendly and reliable resource for all. Together, we aim to break down barriers and make sexual education accessible, dynamic, and enriching."
+    },
+    "bottom": "Your engagement is essential to our mission. We appreciate your participation in making sexual education more open and informed. Feel free to explore, track your journey, connect with others, and, most importantly, share your thoughts. Your feedback is valuable and welcomed as we strive to create a platform that truly meets your needs."
     },
     "track": {
 

@@ -54,18 +54,9 @@
             style="background-position: center center"
             class="pa-10 background-img"
           >
-            <h1 class="font-italic mb-1">What is SexEd+ ?</h1>
+            <h1 class="font-italic mb-1">{{ $t("home.about.title") }}</h1>
             <h2 class="font-weight-regular">
-              Our project is a comprehensive hub designed to offer a myriad of
-              resources for a well-rounded sexual education experience. Dive
-              into thought-provoking articles that cover the spectrum from
-              foundational knowledge to intricate details about safe practices
-              and contraception methods. Personalize your experience by tracking
-              your sexual health on a dedicated dashboard and engage in
-              enlightening and anonymous discussions within our community.
-              Whether you're navigating the basics or seeking guidance on more
-              nuanced aspects, our project is committed to providing support and
-              guidance throughout your journey.
+                {{ $t("home.about.body") }}
             </h2>
           </v-img>
         </v-card>
@@ -82,13 +73,9 @@
             style="background-position: center center"
             class="pa-10 background-img"
           >
-            <h1 class="font-italic my-3">Who can use SexEd+?</h1>
+            <h1 class="font-italic my-3">{{ $t("home.who.title") }}</h1>
             <h2 class="font-weight-regular">
-              This project is for everyone, with a special focus on young teens
-              navigating their first experiences with sexual education. We
-              understand the unique challenges this demographic faces, and our
-              platform is tailored to provide relevant information and a
-              supportive community.
+                {{ $t("home.who.body") }}
             </h2>
           </v-img>
         </v-card>
@@ -105,26 +92,16 @@
             style="background-position: center center"
             class="pa-10 background-img"
           >
-            <h1 class="font-italic my-3">Who are we?</h1>
+            <h1 class="font-italic my-3">{{ $t("home.us.title") }}</h1>
             <h2 class="font-weight-regular">
-              We are a group of students participating in the 'Bits' hackathon,
-              driven by the commitment to developing technologies that enhance
-              sexual education. Our project incorporates trustworthy information
-              and media to create a user-friendly and reliable resource for all.
-              Together, we aim to break down barriers and make sexual education
-              accessible, dynamic, and enriching.
+                {{ $t("home.us.body") }}
             </h2>
           </v-img>
         </v-card>
 
         <div class="text-center">
           <h3 class="font-weight-regular">
-            Your engagement is essential to our mission. We appreciate your
-            participation in making sexual education more open and informed.
-            Feel free to explore, track your journey, connect with others, and,
-            most importantly, share your thoughts. Your feedback is valuable and
-            welcomed as we strive to create a platform that truly meets your
-            needs.
+              {{ $t("home.bottom") }}
           </h3>
         </div>
       </v-col>
