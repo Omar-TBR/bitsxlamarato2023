@@ -89,7 +89,10 @@
       >
         <v-col>
           <h3>{{ $t("footer.createdBy") }}</h3>
-          <h5>Erik Blazquez</h5>
+          <div class="d-flex flex-row justify-start">
+            <h5 class="mr-10">Erik Blazquez</h5>
+            <h5>Miquel Comas</h5>
+          </div>
           <h5>Omar T. Butt</h5>
         </v-col>
         <v-col>

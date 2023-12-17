@@ -4,7 +4,7 @@
       <v-col cols="12">
         <v-img
           :src="require('@/assets/logo.svg')"
-          class="my-8 fullLogo"
+          class="my-8 fullLogo shadow"
           contain
           height="300"
           :style="{ opacity: logoOpacity, transform: `scale(${logoScale})` }"
@@ -13,11 +13,16 @@
           {{ $t("home.slogan") }}
         </h1>
         <v-row class="my-10">
-          <v-col v-for="button in buttons" :key="button.title" cols="4" @click="navigateTo(button.title)">
+          <v-col
+            v-for="button in buttons"
+            :key="button.title"
+            cols="4"
+            @click="navigateTo(button.title)"
+          >
             <div class="circle-container hover-zoom">
               <v-img
                 :src="button.background"
-                class="my-3"
+                class="my-3 shadow"
                 contain
                 height="600"
               />
@@ -80,10 +85,10 @@
             <h1 class="font-italic my-3">Who can use SexEd+?</h1>
             <h2 class="font-weight-regular">
               This project is for everyone, with a special focus on young teens
-            navigating their first experiences with sexual education. We
-            understand the unique challenges this demographic faces, and our
-            platform is tailored to provide relevant information and a
-            supportive community.
+              navigating their first experiences with sexual education. We
+              understand the unique challenges this demographic faces, and our
+              platform is tailored to provide relevant information and a
+              supportive community.
             </h2>
           </v-img>
         </v-card>
@@ -103,11 +108,11 @@
             <h1 class="font-italic my-3">Who are we?</h1>
             <h2 class="font-weight-regular">
               We are a group of students participating in the 'Bits' hackathon,
-            driven by the commitment to developing technologies that enhance
-            sexual education. Our project incorporates trustworthy information
-            and media to create a user-friendly and reliable resource for all.
-            Together, we aim to break down barriers and make sexual education
-            accessible, dynamic, and enriching.
+              driven by the commitment to developing technologies that enhance
+              sexual education. Our project incorporates trustworthy information
+              and media to create a user-friendly and reliable resource for all.
+              Together, we aim to break down barriers and make sexual education
+              accessible, dynamic, and enriching.
             </h2>
           </v-img>
         </v-card>
@@ -129,8 +134,6 @@
 
 <script>
 export default {
-  name: "HelloWorld",
-
   data: function () {
     return {
       logoOpacity: 1,
@@ -213,7 +216,9 @@ export default {
   }
 }
 
-
+.shadow {
+  filter: drop-shadow(100px 64px 218px rgba(0, 0, 0, 0.13));
+}
 
 .background-component {
   position: relative;
