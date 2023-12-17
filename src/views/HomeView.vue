@@ -3,15 +3,24 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
+        :src="require('@/assets/backgrounds/lines.png')"
+        cover
+        class="pt-5"
+        height="600"
+        style="opacity: 0.8"
+        >
+        <v-img
           :src="require('@/assets/logo.svg')"
           class="my-8 fullLogo shadow"
           contain
           height="300"
           :style="{ opacity: logoOpacity, transform: `scale(${logoScale})` }"
         />
-        <h1 class="display-2 font-weight-bold mb-10">
+        <h1 class="display-2 font-weight-medium mb-10">
           {{ $t("home.slogan") }}
         </h1>
+      </v-img>
+        
         <v-row class="my-10">
           <v-col
             v-for="button in buttons"
@@ -32,7 +41,7 @@
                   <v-col cols="12" class="text-right title">
                     <h2 class="mb-10">
                       {{ $t("home.buttons." + button.title + ".title") }}
-                    </h2>
+                    </h2>Other resources
                     <h5 class="subtitle font-weight-regular">
                       {{ $t("home.buttons." + button.title + ".subtitle") }}
                     </h5>

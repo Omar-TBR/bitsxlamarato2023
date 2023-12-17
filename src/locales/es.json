@@ -31,11 +31,17 @@
     "bottom": "Tu compromiso es esencial para nuestra misión. Agradecemos tu participación en hacer la educación sexual más abierta e informada. Siéntete libre de explorar, seguir tu camino, conectar con otros y, lo más importante, compartir tus pensamientos. Tu retroalimentación es valiosa y bienvenida mientras nos esforzamos por crear una plataforma que realmente satisfaga tus necesidades."
     },
     "track": {
-
-    },
-    "connect": {
-
-    },
+    "title": "Seguimiento",
+    "subtitle": "Te presentamos Seguimiento, tu centro personalizado para monitorear y optimizar tu salud sexual. Ingresa tus datos de manera segura para crear un panel personalizado que registra aspectos esenciales de tu bienestar, como ciclos menstruales, métodos anticonceptivos y frecuencia de actividad sexual. Recibe recomendaciones personalizadas basadas en tu información, permitiéndote tomar decisiones proactivas sobre tu salud. Seguimiento es tu compañero en el viaje hacia un enfoque más saludable e informado de tu bienestar sexual.",
+    "warningTitle": "¡Próximamente la Función de Seguimiento!",
+    "warningSubtitle": "¡Hola! Estamos emocionados de informarte que nuestra función de 'Seguimiento' está actualmente en construcción para brindarte una experiencia aún mejor. Agradecemos tu paciencia mientras trabajamos en esta mejora. Mantente atento a las actualizaciones y gracias por ser parte de nuestro camino hacia un tú más saludable e informado."
+  },
+  "connect": {
+    "title": "Conectar",
+    "subtitle": "Embárcate en un viaje de diálogo abierto y apoyo en esta sección. Este espacio está diseñado para participación anónima, brindándote un foro donde puedes compartir libremente tus experiencias, buscar consejos y participar en discusiones relacionadas con la educación sexual. Conéctate con una comunidad de personas que están navegando caminos similares, haz preguntas y contribuye a un entorno que fomenta la comprensión y la empatía. Tu voz importa, y aquí se escucha sin juicio.",
+    "warningTitle": "¡Próximamente la Función de Seguimiento!",
+    "warningSubtitle": "¡Hola! Estamos emocionados de informarte que nuestra función de 'Seguimiento' está actualmente en construcción para brindarte una experiencia aún mejor. Agradecemos tu paciencia mientras trabajamos en esta mejora. Mantente atento a las actualizaciones y gracias por ser parte de nuestro camino hacia un tú más saludable e informado."
+  },
     "settings": {
     },
     "footer":{
@@ -54,4 +60,3 @@
         }
     }
 }
-  
