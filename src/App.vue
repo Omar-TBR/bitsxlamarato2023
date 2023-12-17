@@ -9,6 +9,28 @@
       :inverted-scroll="isCurrentSection('home')"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-dialog v-model="loginDialog" max-width="25rem">
+        <v-card class="pa-5 rounded-xl text-center">
+          <h1>Login</h1>
+
+          <!-- Username Field -->
+          <v-text-field v-model="username" label="Username"></v-text-field>
+
+          <!-- Password Field -->
+          <v-text-field
+            v-model="password"
+            label="Password"
+            type="password"
+          ></v-text-field>
+<div class="d-flex justify-space-around px-10">
+  <v-btn @click="login" color="primary">Login</v-btn>
+  <v-btn @click="closeLoginDialog">Cancel</v-btn>
+</div>
+          
+        </v-card>
+      </v-dialog>
+
       <v-row class="align-center pl-15" no-gutters>
         <v-spacer></v-spacer>
         <div class="align-center justify-center">
@@ -22,13 +44,9 @@
           </router-link>
         </div>
         <v-spacer></v-spacer>
-        <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
-          target="_blank"
-          text
-        >
+        <v-btn flat plain @click="showLoginDialog">
           <span>Login</span>
-          <v-icon>mdi-open-in-new</v-icon>
+          <v-icon class="mx-2">mdi-login</v-icon>
         </v-btn>
       </v-row>
     </v-app-bar>
@@ -73,7 +91,10 @@
           @change="changeLanguage"
           class="pr-10"
         ></v-select>
-        <v-btn elevation="2" outlined class="px-5"><h3>LOG IN</h3></v-btn>
+        <v-btn elevation="2" outlined class="mr-5" @click="showLoginDialog"
+          ><h3>LOG IN</h3>
+          <v-icon class="mx-2">mdi-login</v-icon></v-btn
+        >
       </div>
     </v-navigation-drawer>
 
@@ -137,6 +158,12 @@ export default {
   name: "App",
 
   data: () => ({
+    //login
+    loginDialog: false,
+    username: "",
+    password: "",
+
+    //general
     languages: ["CA", "EN", "ES"],
     drawer: false,
     selectedSection: "home",
@@ -159,6 +186,26 @@ export default {
     },
   },
   methods: {
+    //login
+    showLoginDialog() {
+      this.loginDialog = true;
+    },
+    closeLoginDialog() {
+      this.loginDialog = false;
+      // Optionally, you may want to clear the username and password fields here
+      this.username = "";
+      this.password = "";
+    },
+    login() {
+      // Add your login logic here
+      // For demonstration purposes, just log the entered credentials
+      console.log("Username:", this.username);
+      console.log("Password:", this.password);
+
+      // Close the dialog after login attempt
+      this.closeLoginDialog();
+    },
+    //general
     navigateTo(section) {
       // Use Vue Router to navigate to the specified route
       this.$router.push({ name: section });
