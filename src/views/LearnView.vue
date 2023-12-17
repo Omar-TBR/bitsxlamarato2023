@@ -4,10 +4,11 @@
       <v-spacer></v-spacer>
       <v-col cols="3">
         <div class="text-left mr-1">
-            <h1 class="display-1 font-weight-bold pt-5 pb-3">{{
-                $t("learn.title") }}</h1>
+          <h1 class="display-1 font-weight-bold pt-5 pb-3">
+            {{ $t("learn.title") }}
+          </h1>
           <h3 class="font-weight-regular">
-              {{ $t("learn.description") }}
+            {{ $t("learn.description") }}
           </h3>
         </div>
       </v-col>
@@ -29,37 +30,41 @@
           "
         >
           <div class="mx-5">
-              <h1 class="font-weight-medium">{{ $t("learn.topic1.title") }}</h1>
-            <h3 class="font-weight-regular">
-                {{ $t("learn.topic1.body") }}
-            </h3>
+            <h1 class="font-weight-medium mb-5">
+              {{ $t("learn.topic1.title") }}
+            </h1>
+            <h2 class="font-weight-regular">
+              {{ $t("learn.topic1.body") }}
+            </h2>
           </div>
           <v-img
-            src="https://picsum.photos/200"
+          :src="require('@/assets/pictures/photoconceptives.jpg')"
             width="25rem"
             class="hover-zoom mx-5 rounded-lg"
           />
         </v-card>
 
         <v-card
-          class="d-flex aling-center py-5 rounded-xl"
+          class="text-center d-flex flex-column align-center justify-center py-5 rounded-xl"
           :img="
             require('@/assets/backgrounds/semiback' +
               Math.floor(Math.random() * 6) +
               '.png')
           "
         >
-          <v-img
-            src="https://picsum.photos/200"
-            width="25rem"
-            class="hover-zoom mx-5 rounded-lg"
-          />
-          <div class="mx-5">
-            <h1 class="font-weight-medium">{{ $t("learn.topic2.title") }}</h1>
-            <h3 class="font-weight-regular">
-                {{ $t("learn.topic2.body") }}
-            </h3>
+          <div class="text-left ma-5">
+            <h1 class="font-weight-medium mb-5">
+              {{ $t("learn.topic2.title") }}
+            </h1>
+            <h2 class="font-weight-regular">
+              {{ $t("learn.topic2.body") }}
+            </h2>
           </div>
+          <v-img
+              :src="require('@/assets/pictures/stds.png')"
+              width="50rem"
+              class="hover-zoom mx-5 rounded-lg"
+            />
         </v-card>
       </v-col>
       <v-spacer></v-spacer>
