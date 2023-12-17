@@ -59,41 +59,43 @@
   </v-card>
 </template>
 <script>
+import axios from 'axios'
+
+
 export default {
-  data: function () {
-    return {
-      //pillar user de cookies
+  data: () => ({
+
       currentUser: 5,
       newComment: "",
-      //PILLAR COMENTS BACK
-      comments: [
-        {
-          comment: "Esto es un comment",
-          id: 1,
-          thread: 2,
-          creator: 2,
-          date: "2023-12-16",
-          likes: 0,
-        },
-        {
-          comment: "Esto es otro comment",
-          id: 2,
-          thread: 2,
-          creator: 3,
-          date: "2023-12-16",
-          likes: 0,
-        },
-        {
-          comment: "Ala a ful de comments",
-          id: 3,
-          thread: 2,
-          creator: 4,
-          date: "2023-12-16",
-          likes: 0,
-        },
-      ],
-    };
-  },
+      comments: []
+      // [
+      //   {
+      //     comment: "Esto es un comment",
+      //     id: 1,
+      //     thread: 2,
+      //     creator: 2,
+      //     date: "2023-12-16",
+      //     likes: 0,
+      //   },
+      //   {
+      //     comment: "Esto es otro comment",
+      //     id: 2,
+      //     thread: 2,
+      //     creator: 3,
+      //     date: "2023-12-16",
+      //     likes: 0,
+      //   },
+      //   {
+      //     comment: "Ala a ful de comments",
+      //     id: 3,
+      //     thread: 2,
+      //     creator: 4,
+      //     date: "2023-12-16",
+      //     likes: 0,
+      //   },
+      // ],
+    // };
+  }),
   props: {
     thread: {
       type: Object,
@@ -103,6 +105,7 @@ export default {
   },
   methods: {
     addComment() {
+
       // Only add a comment if the v-textarea is not empty
       if (this.newComment.trim() !== "") {
         this.comments.push({
@@ -114,10 +117,36 @@ export default {
           likes: 0,
         });
         this.newComment = ""; // Clear the v-textarea
-        //CONNECT WITH BACK
+        axios
+        .post('http://localhost:8000/Bitsx/threads/'+this.thread.id+'/comments', {
+          comment: this.newComment,
+        })
+        .then(response => {
+          console.log(response.data);
+          this.openChat(this.newSeat);
+        })
+        .catch(error => {
+          console.log(error)
+        })
       }
     },
   },
+  mounted: 
+  async function() {
+    var comments = []
+      console.log(this.thread)
+      await axios
+      .get('http://localhost:8000/Bitsx/threads/' + this.thread.id + '/comments' )
+      .then(response => {
+        console.log(response.data);
+        comments = response.data;
+        this.poolMessages();
+      })
+      .catch(error => {
+        console.log(error)
+      })
+      this.comments = comments
+  }
 };
 </script>
 <style lang="scss" scoped>
